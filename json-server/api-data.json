@@ -1,0 +1,53 @@
+{
+  "movies": [
+    {
+      "id": 101,
+      "movietitle": "Movie Title A",
+      "summary": "Description of Movie A",
+      "ticketprice": 15.00,
+      "showtime": "May 31 - 7:30pm"
+    },
+    {
+      "id": 102,
+      "movietitle": "Movie Title B",
+      "summary": "Description of Movie B",
+      "ticketprice": 15.00,
+      "showtime": "June 1 - 7:30pm"
+    },
+    {
+      "id": 103,
+      "movietitle": "Movie Title C",
+      "summary": "Description of Movie C",
+      "ticketprice": 15.00,
+      "showtime": "June 2 - 9:30pm"
+    },
+    {
+      "id": 104,
+      "movietitle": "Movie Title D",
+      "summary": "Description of Movie D",
+      "ticketprice": 15.00,
+      "showtime": "June 3 - 7:30pm"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fname": "Andie",
+      "lname": "Mydosh",
+      "pw": "pw1",
+      "username": "amydosh",
+      "address": "123 First St",
+      "state": "NY",
+      "zip": "12345",
+      "city": "New York",
+      "email": "andie.mydosh@gmail.com"
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "adminUN": "admin1",
+      "adminPW": "pw1"
+    }
+  ]
+}

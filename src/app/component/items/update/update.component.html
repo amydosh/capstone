@@ -1,0 +1,87 @@
+<!-- Bootstrap Form with validation -->
+<div class="container form-container">
+    <h1 style="text-align: center;">Update Product Form</h1>
+    <form class="form-validate" novalidate [formGroup]="itemForm" (ngSubmit)="onSubmit(itemForm)">
+    
+     <div class="form-row">
+     <div class="col-sm-3"></div>
+        <!-- Product Id -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="id">Product Id:</label>
+          <input type="number" class="form-control" name="id" id="id" formControlName="id"
+          aria-describedby="idHelp">
+          <small *ngIf="hasError('id')" [class]="hasError('id') ? 'has-error' :''">
+            <div *ngIf="id?.errors">
+                <span *ngIf="id?.errors?.['required']">ID is a required field</span>
+            </div>
+          </small>
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-sm-3"></div>
+       <!-- Product Name -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="name">Item Name</label>
+          <input type="text" class="form-control" name="name" id="name" formControlName="name"  aria-describedby="nameHelp" >
+          <small *ngIf="hasError('name')" [class]="hasError('name') ? 'has-error' :''">
+            <div *ngIf="name?.errors">
+                <span *ngIf="name?.errors?.['required']">Password is a required field</span>
+            </div>
+          </small>
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+     </div>
+
+
+    <div class="form-row">
+        <div class="col-sm-3"></div>
+       <!-- Product Description -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="price">Item Price:</label>
+          <input type="number" class="form-control" name="price" id="price" formControlName="price"  aria-describedby="priceHelp" >
+          <small *ngIf="hasError('price')" [class]="hasError('price') ? 'has-error' :''">
+            <div *ngIf="price?.errors">
+                <span *ngIf="price?.errors?.['required']">Password is a required field</span>
+            </div>
+          </small>
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+     </div>
+  
+     <div class="form-row">
+        <div class="col-sm-3"></div>
+       <!-- Product Price -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" class="form-control" name="quantity" id="quantity" formControlName="quantity"  aria-describedby="quantityHelp" >
+          <small *ngIf="hasError('quantity')" [class]="hasError('quantity') ? 'has-error' :''">
+            <div *ngIf="quantity?.errors">
+                <span *ngIf="quantity?.errors?.['required']">Quantity is a required field</span>
+            </div>
+          </small>
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+     </div>
+
+
+  
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <button type="submit" class="btn btn-info btn-block" >Submit</button>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    </form>
+  </div>

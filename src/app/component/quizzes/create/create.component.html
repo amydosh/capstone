@@ -1,0 +1,106 @@
+<!-- Bootstrap Form with validation -->
+<div class="container form-container">
+    <h1 style="text-align: center;">Create Quiz Form</h1>
+    <form class="form-validate" novalidate [formGroup]="quizForm" (ngSubmit)="onSubmit(quizForm)">
+    
+     <div class="form-row">
+     <div class="col-sm-3"></div>
+        <!-- Product Id -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="id">Question Id</label>
+          <input type="text" class="form-control" name="id" id="id" formControlName="id"
+          aria-describedby="idHelp">
+          <!-- <small *ngIf="hasError('id')" [class]="hasError('id') ? 'has-error' :''">
+            <div *ngIf="id?.errors">
+                <span *ngIf="id?.errors?.['required']">ID is a required field</span>
+            </div>
+          </small> -->
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-sm-3"></div>
+           <!-- Product Id -->
+          <div class="col-sm-6">
+           <div class="form-group">
+             <label for="questionnum">Question Number:</label>
+             <input type="text" class="form-control" name="questionnum" id="questionnum" formControlName="questionnum"
+             aria-describedby="questionnumHelp">
+             <!-- <small *ngIf="hasError('id')" [class]="hasError('id') ? 'has-error' :''">
+               <div *ngIf="id?.errors">
+                   <span *ngIf="id?.errors?.['required']">ID is a required field</span>
+               </div>
+             </small> -->
+           </div>
+          </div>
+          <div class="col-sm-3"></div>
+       </div>
+
+
+    <div class="form-row">
+        <div class="col-sm-3"></div>
+       <!-- Product Name -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="questiondesc">Question Description</label>
+          <input type="text" class="form-control" name="questiondesc" id="questiondesc" formControlName="questiondesc"  aria-describedby="questiondescHelp" >
+          <!-- <small *ngIf="hasError('name')" [class]="hasError('name') ? 'has-error' :''">
+            <div *ngIf="name?.errors">
+                <span *ngIf="name?.errors?.['required']">Password is a required field</span>
+            </div>
+          </small> -->
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+     </div>
+
+
+    <div class="form-row">
+        <div class="col-sm-3"></div>
+       <!-- Product Description -->
+       <div class="col-sm-6">
+        <div class="form-group">
+          <label for="answer">Answer</label>
+          <input type="text" class="form-control" name="answer" id="answer" formControlName="answer"  aria-describedby="answerHelp" >
+          <!-- <small *ngIf="hasError('description')" [class]="hasError('description') ? 'has-error' :''">
+            <div *ngIf="description?.errors">
+                <span *ngIf="description?.errors?.['required']">Password is a required field</span>
+            </div>
+          </small> -->
+        </div>
+       </div>
+       <div class="col-sm-3"></div>
+     </div>
+  
+     <!-- <div class="form-row">
+        <div class="col-sm-3"></div> -->
+       <!-- Product Price -->
+       <!-- <div class="col-sm-6">
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" class="form-control" name="price" id="price" formControlName="price"  aria-describedby="priceHelp" > -->
+          <!-- <small *ngIf="hasError('price')" [class]="hasError('price') ? 'has-error' :''">
+            <div *ngIf="price?.errors">
+                <span *ngIf="price?.errors?.['required']">Price is a required field</span>
+            </div>
+          </small> -->
+        <!-- </div>
+       </div>
+       <div class="col-sm-3"></div>
+     </div> -->
+
+
+  
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <button type="submit" class="btn btn-info btn-block" >Submit</button>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    </form>
+  </div>

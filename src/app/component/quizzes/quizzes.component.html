@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="card-deck">
+        <div class="card" *ngFor="let quiz of quizzes">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">{{quiz.id}} {{quiz.questionnum}}</h5>
+            <p class="card-text">Question: {{quiz.questiondesc}}</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-text">
+              <small class="text-muted">Answer: {{quiz.answer}}</small>
+              <a (click)="onEdit(quiz)" class="badge badge-warning">Edit</a>
+              <a (click)="onDelete(quiz.id)" class="badge badge-danger">Delete</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
